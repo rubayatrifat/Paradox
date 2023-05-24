@@ -1,0 +1,50 @@
+/*============ Header Start Here =======================*/
+
+.header-area {
+	/* position: absolute; */
+	z-index: 999;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu-settings {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .main-menu {
+                padding: 23px 0;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-right: 35px;
+                    li {
+                        margin-right: 38px;
+                        a{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: hsl(var(--black));
+                            &:hover{
+                                color: hsl(var(--base));
+                            }                        }
+                    }
+                }    
+            }
+            .select-lan {
+                margin-right: 16px;
+                border: none;
+                background: transparent;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .fa-solid.fa-globe {
+                background: hsl(var(--base));
+                color: #fff;
+                padding: 6px;
+                border-radius: 50%;
+                font-size: 14px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
