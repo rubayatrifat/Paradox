@@ -1,76 +1,43 @@
-/*====================== How it works ====================*/
-.service {
-    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
-    border-radius: var(--border-radius);
-    border: 2px solid hsl(var(--base)/.07);
-    transition: all .4s ease-in-out;
-    text-align: start;
-    position: relative;
-    overflow: hidden;
-    position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0px;
-        width: 50%;
-        height: 100%;
-        background: linear-gradient(43.32deg, hsl(var(--base-two)/0.3) 14.73%, hsl(var(--base)/0.3) 86.35%, hsl(var(--base)/0.3) 86.35%);
-        transform: rotate(159deg);
-        border-radius: 10px;
-        transition: all 0.4s ease-in-out;
-        filter: blur(83px);
-        border-radius: 10%;
-    }
-    @include xsm-screen {
-        flex-direction: column;
-    }
-    &:hover {
-        box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
-        border: 2px solid hsl(var(--base)/.4);
-        transform: translateY(-3px);
-        .service {
-            &__icon {
-                i {
-                    transform: scale(1.1);
-                }
-                &::before {
-                    background: hsl(var(--base)/0.3);
-                }
+/*====================== Servies Area ====================*/
+
+.servies-area {
+	padding: 90px;
+    .slide-area {
+        margin-top: 40px;
+        .single-servies {
+            background: transparent;
+            border: 3px solid hsl(var(--black)/0.1);
+            padding: 30px 35px;
+            border-radius: 10px;
+            span{
+                padding: 10px 20px;
+                line-height: 65px;
+                font-size: 50px;
+                font-weight: 700;
+                background-color: hsl(var(--base));
+                color: hsl(var(--white));
+                margin-bottom: 20px;
+                display: inline-block;
+                border-radius: 10px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 31px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 24px;
+                padding-bottom: 20px;
+                border-bottom: 2px dashed hsl(var(--black));
+                margin-bottom: 20px;
+            }
+
+            a{
+                color: hsl(var(--base));
+                font-size: 15px;
             }
         }
     }
-    &__icon {
-        margin-bottom: 20px;
-        position: relative;
-        transition: all .6s ease-in-out;
-        i {
-            font-size: 40px;
-            color: hsl(var(--base));
-            margin-top: 2px;
-            text-align: center;
-            transition: transform 0.5s ease;
-        }
-    }
-    &__content  {
-        @include xsm-screen {
-            margin-left: 0;
-        }
-        h3 {
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        a {
-            font-weight: 700;
-            transition: 0.5s;
-            font-size: 18px;
-            margin-top: 11px;
-        }
-    }
 }
-.service a {
-    display: block;
-    text-align: center;
-    padding: 30px;
-}
+

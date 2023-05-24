@@ -4,33 +4,6 @@
   "use strict";
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   /*============== Header Hide Click On Body Js ========*/
   $('.navbar-toggler.header-button').on('click', function() {
     if($('.body-overlay').hasClass('show')){
@@ -127,6 +100,43 @@ $('.theme-btn').on('mouseenter', function (e) {
       autoplaySpeed: 5000,
       speed: 3500,
       dots: false,
+      pauseOnHover: false,
+      arrows: false,
+      responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+
+
+
+    $('.slide-area').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      speed: 3500,
+      dots: true,
       pauseOnHover: false,
       arrows: false,
       responsive: [
