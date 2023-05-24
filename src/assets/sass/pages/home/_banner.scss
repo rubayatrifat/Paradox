@@ -1,8 +1,9 @@
 /*============= Banner area start  =============*/
 
 .banner-area {
-    background-image: url(../images/banner/BG.png);
-    height: 800px;
+	background-image: url(../images/banner/BG.png);
+	height: 800px;
+	background: hsl(var(--base)/0.1);
     .this-bg {
         max-width: 46%;
         height: 700px;
@@ -18,55 +19,62 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 195px;
-        .section-title{
-            span{
-                line-height: 24px;
-                font-size: 16px;
-                letter-spacing: 1px;
-                margin-left: 27px;
-                position: relative;
-                &::before {
-                    content: "";
-                    width: 15px;
-                    height: 15px;
-                    background-color: hsl(var(--base));
-                    position: absolute;
-                    rotate: 45deg;
-                    top: 2px;
-                    left: -28px;
-                }
-                &::after {
-                    content: "";
-                    width: 15px;
-                    height: 15px;
-                    background-color: hsl(var(--base-two));
-                    position: absolute;
-                    rotate: 45deg;
-                    top: 2px;
-                    left: -21px;
-                    z-index: -1;
-                }
-            }
-            h1{
-                font-weight: 800;
-                margin-bottom: 30px;
-                font-size: 70px;
-                line-height: 104px;
-                color: hsl(var(--black));
-            }
-            p {
-                line-height: 24px;
-                font-size: 16px;
-                width: 74%;
-                margin-bottom: 47px;
-            }
-            a {
-                margin-right: 20px;
-                i {
-                    rotate: -45deg;
-                    margin-left: 5px;
-                }
-            }
+    }
+}
+
+.section-title{
+    .subtitle{
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-left: 27px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: hsl(var(--base));
+            position: absolute;
+            rotate: 45deg;
+            top: 2px;
+            left: -28px;
+        }
+        &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: hsl(var(--base-two));
+            position: absolute;
+            rotate: 45deg;
+            top: 2px;
+            left: -21px;
+            z-index: -1;
+        }
+    }
+    h1{
+        font-weight: 800;
+        margin-bottom: 30px;
+        font-size: 70px;
+        line-height: 104px;
+        color: hsl(var(--black));
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+    p {
+        line-height: 24px;
+        font-size: 16px;
+        width: 74%;
+        margin-bottom: 47px;
+    }
+    a {
+        margin-right: 20px;
+        i {
+            rotate: -45deg;
+            margin-left: 5px;
         }
     }
 }

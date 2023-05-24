@@ -3979,6 +3979,20 @@ html {
     }
 }
 
+.brand-area {
+    background: hsl(var(--base)/0.1);
+}
+
+.brand-area .all-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 2px solid hsl(var(--black)/0.3);
+    padding: 50px;
+    border-radius: 13px;
+}
+
 .bg-img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -6379,6 +6393,7 @@ html {
 .banner-area {
     background-image: url(../images/banner/BG.png);
     height: 800px;
+    background: hsl(var(--base)/0.1);
 }
 
 .banner-area .this-bg {
@@ -6399,7 +6414,7 @@ html {
     margin-top: 195px;
 }
 
-.banner-area .banner-content-img .section-title span {
+.section-title .subtitle {
     line-height: 24px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -6407,7 +6422,7 @@ html {
     position: relative;
 }
 
-.banner-area .banner-content-img .section-title span::before {
+.section-title .subtitle::before {
     content: "";
     width: 15px;
     height: 15px;
@@ -6418,7 +6433,7 @@ html {
     left: -28px;
 }
 
-.banner-area .banner-content-img .section-title span::after {
+.section-title .subtitle::after {
     content: "";
     width: 15px;
     height: 15px;
@@ -6430,7 +6445,7 @@ html {
     z-index: -1;
 }
 
-.banner-area .banner-content-img .section-title h1 {
+.section-title h1 {
     font-weight: 800;
     margin-bottom: 30px;
     font-size: 70px;
@@ -6438,18 +6453,25 @@ html {
     color: hsl(var(--black));
 }
 
-.banner-area .banner-content-img .section-title p {
+.section-title h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.section-title p {
     line-height: 24px;
     font-size: 16px;
     width: 74%;
     margin-bottom: 47px;
 }
 
-.banner-area .banner-content-img .section-title a {
+.section-title a {
     margin-right: 20px;
 }
 
-.banner-area .banner-content-img .section-title a i {
+.section-title a i {
     rotate: -45deg;
     margin-left: 5px;
 }
@@ -6457,6 +6479,7 @@ html {
 /*====================== About Section====================*/
 .about-section {
     overflow: hidden;
+    background: hsl(var(--base)/0.1);
 }
 
 .about-section .square-shape-1 {
@@ -6483,10 +6506,15 @@ html {
     position: relative;
 }
 
-@media screen and (max-width: 991px) {
-    .about-thumb {
-        padding: 0;
-    }
+.about-thumb .shape {
+    position: absolute;
+    height: 650px;
+    width: 650px;
+    background-color: hsl(var(--base-two));
+    border-radius: 50%;
+    z-index: -1;
+    top: 71%;
+    left: -53px;
 }
 
 .about-thumb__inner img {
@@ -6504,26 +6532,6 @@ html {
     border-radius: var(--border-radius);
 }
 
-@media screen and (max-width: 1399px) {
-    .about-thumb__inner img.img-1 {
-        top: 70%;
-        height: 390px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .about-thumb__inner img.img-1 {
-        top: 43%;
-        height: 287px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .about-thumb__inner img.img-1 {
-        display: none;
-    }
-}
-
 .about-thumb .about-contact {
     border-radius: var(--border-radius);
     background: hsl(var(--white));
@@ -6532,26 +6540,6 @@ html {
     bottom: -63px;
     left: 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-@media screen and (max-width: 1199px) {
-    .about-thumb .about-contact {
-        bottom: -10px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .about-thumb .about-contact {
-        bottom: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .about-thumb .about-contact {
-        display: none !important;
-    }
 }
 
 .about-thumb .about-contact i {
@@ -6587,17 +6575,22 @@ html {
     padding-left: 20px;
 }
 
-@media screen and (max-width: 991px) {
-    .about-right-content {
-        padding-left: 0;
-    }
+.about-right-content .about-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-right-content .about-service li {
     padding-bottom: 10px;
     position: relative;
     padding-left: 30px;
-    font-size: 18px;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 700;
+    width: 48%;
+    margin-bottom: 10px;
 }
 
 .about-right-content .about-service li:last-child {
@@ -6606,7 +6599,7 @@ html {
 }
 
 .about-right-content .about-service li i {
-    color: hsl(var(--base));
+    color: hsl(var(--base-two));
     width: 20px;
     height: 20px;
     line-height: 20px;

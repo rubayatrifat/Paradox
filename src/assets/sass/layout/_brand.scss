@@ -1,0 +1,12 @@
+.brand-area {
+	background: hsl(var(--base)/0.1);
+	.all-item {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 40px;
+		border: 2px solid hsl(var(--black)/0.3);
+		padding: 50px;
+		border-radius: 13px;
+	}
+}

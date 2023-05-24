@@ -1,6 +1,7 @@
 /*====================== About Section====================*/
 .about-section {
     overflow: hidden;
+    background: hsl(var(--base)/0.1);
     .square-shape-1  {
         position: absolute;
         left: -15px;
@@ -19,8 +20,15 @@
     padding-left: 30px;
     padding-right: 30px;
     position: relative;
-    @include md-screen {
-        padding: 0;
+    .shape {
+        position: absolute;
+        height: 650px;
+        width: 650px;
+        background-color: hsl(var(--base-two));
+        border-radius: 50%;
+        z-index: -1;
+        top: 71%;
+        left: -53px;
     }
     &__inner {
        img {
@@ -35,17 +43,6 @@
         height: 300px;
         object-fit: cover;
         border-radius: var(--border-radius);
-        @include xl-screen {
-            top: 70%;
-            height: 390px;
-        }
-        @include md-screen {
-            top: 43%;
-            height: 287px;
-        }
-        @include msm-screen {
-            display: none;
-        }
     }
     }
     .about-contact {
@@ -56,17 +53,6 @@
         bottom: -63px;
         left: 40px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        @include lg-screen {
-            bottom: -10px;
-        }
-        @include md-screen {
-            bottom: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        @include msm-screen {
-           display: none !important;
-        }
         i {
             color: hsl(var(--base));
             font-size: 24px;
@@ -99,21 +85,26 @@
 
 .about-right-content {
     padding-left: 20px;
-    @include md-screen {
-    padding-left: 0;
-    }
     .about-service {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
         li {
             padding-bottom: 10px;
             position: relative;
             padding-left: 30px;
-            font-size: 18px;
+            font-size: 16px;
+            margin-left: 10px;
+            font-weight: 700;
+            width: 48%;
+            margin-bottom: 10px;
             &:last-child {
                 padding-bottom: 0;
                 border-bottom: 0;
             }
             i {
-                color: hsl(var(--base));
+                color: hsl(var(--base-two));
                 width: 20px;
                 height: 20px;
                 line-height: 20px;
