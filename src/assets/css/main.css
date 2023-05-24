@@ -3115,7 +3115,8 @@ select.form-control.form--control:has(option) ~ .form--label {
 /* ================= Floting Input End ================= */
 /*============ Header Start Here =======================*/
 .header-area {
-  /* position: absolute; */
+    position: absolute;
+    width: 100%;
     z-index: 999;
 }
 
@@ -6372,6 +6373,85 @@ html {
 
 .light-dark-btn-wrap .mon-icon.show {
     display: none;
+}
+
+/*============= Banner area start  =============*/
+.banner-area {
+    background-image: url(../images/banner/BG.png);
+    height: 800px;
+}
+
+.banner-area .this-bg {
+    max-width: 46%;
+    height: 700px;
+    top: 0;
+    left: 54%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.banner-area .banner-content-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 195px;
+}
+
+.banner-area .banner-content-img .section-title span {
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 27px;
+    position: relative;
+}
+
+.banner-area .banner-content-img .section-title span::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: hsl(var(--base));
+    position: absolute;
+    rotate: 45deg;
+    top: 2px;
+    left: -28px;
+}
+
+.banner-area .banner-content-img .section-title span::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: hsl(var(--base-two));
+    position: absolute;
+    rotate: 45deg;
+    top: 2px;
+    left: -21px;
+    z-index: -1;
+}
+
+.banner-area .banner-content-img .section-title h1 {
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-size: 70px;
+    line-height: 104px;
+    color: hsl(var(--black));
+}
+
+.banner-area .banner-content-img .section-title p {
+    line-height: 24px;
+    font-size: 16px;
+    width: 74%;
+    margin-bottom: 47px;
+}
+
+.banner-area .banner-content-img .section-title a {
+    margin-right: 20px;
+}
+
+.banner-area .banner-content-img .section-title a i {
+    rotate: -45deg;
+    margin-left: 5px;
 }
 
 /*====================== About Section====================*/
