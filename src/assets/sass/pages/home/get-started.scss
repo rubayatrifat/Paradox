@@ -1,0 +1,41 @@
+/* ================= Get started Here ================ */
+
+
+
+.get-started {
+    background-color: hsl(var(--base)/.9);
+    padding: 70px 0;
+    .started-img-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            color: hsl(var(--white));
+            &::before {
+                z-index: 2;
+                background-color: hsl(var(--white));
+            }
+            &::after {
+                z-index: 1;
+            }
+        }
+        h2 {
+            color: hsl(var(--white));
+        }
+        .started-img{
+            position: relative;
+            &::before {
+                content: "";
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: hsl(var(--base));
+                position: absolute;
+                z-index: -1;
+                right: 200px;
+            }
+        }
+        
+    }
+}
+
