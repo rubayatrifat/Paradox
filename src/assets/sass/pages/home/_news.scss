@@ -1,0 +1,43 @@
+/* =================== News area Here =================== */
+.news-full {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 62px;
+    .single-news {
+        width: 47%;
+        background: #ccc;
+        padding: 26px;
+        border-radius: 39px;
+        .tag-date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 35px;
+            .tag {
+                background-color: hsl(var(--base-two));
+                width: 55px;
+                height: 30px;
+                border-radius: 30px;
+                line-height: 25px;
+            }
+            h3 {
+                font-size: 16px;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+        h2{
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .profile {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            img{
+                width: 65px;
+            }
+        }
+    }
+}

@@ -429,13 +429,13 @@ $(document).ready(function() {
 });
 
   /*============================ header menu show hide =========*/
-  $('.sidebar-menu-show-hide').on('click', function() {
-    $('.sidebar-menu-wrapper').addClass('show');
+  $('.side-menu').on('click', function() {
+    $('.main-mobail-menu').addClass('show');
     $(".sidebar-overlay").addClass('show'); 
 });
 
-  $('.sidebar-overlay, .close-hide-show').on('click', function() {
-    $('.sidebar-menu-wrapper').removeClass('show');
+  $('.sidebar-overlay, .close-butn').on('click', function() {
+    $('.main-mobail-menu').removeClass('show');
     $(".sidebar-overlay").removeClass('show'); 
 });
 

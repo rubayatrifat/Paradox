@@ -7,13 +7,51 @@
     .header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;      
+        padding: 23px 0;  
+        .mobail-menu {
+            display: none;
+            .main-mobail-menu{
+                width: 300px;
+                background: linear-gradient(yellow 70%, blue );
+                position: fixed;
+                right: -300px;
+                top: 0;
+                padding: 39px;
+                height: 100vh;
+                transition: all ease-in-out .5s;
+                &.show {
+                    right: 0;
+                }
+            }
+            @include md-screen {
+                display: block;
+            }
+            li {
+                margin: 12px 0;
+            }
+            .select-lan {
+                margin-bottom: 22px;
+            }
+            i {
+                color: hsl(var(--base));
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .close-btn {
+                position: absolute;
+                top: 3%;
+                right: 19px;
+            }
+        }
         .menu-settings {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            @include md-screen {
+                display: none;
+            }
             .main-menu {
-                padding: 23px 0;
                 ul {
                     display: flex;
                     justify-content: space-between;
@@ -21,6 +59,9 @@
                     margin-right: 35px;
                     li {
                         margin-right: 38px;
+                        @include lg-screen {
+                            margin-right: 15px;
+                        }
                         a{
                             font-size: 16px;
                             font-weight: 600;
@@ -48,4 +89,12 @@
             }
         }
     }
+}
+
+.select-lan {
+    margin-right: 16px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
 }

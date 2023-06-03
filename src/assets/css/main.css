@@ -3126,6 +3126,52 @@ select.form-control.form--control:has(option) ~ .form--label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 23px 0;
+}
+
+.header-area .header .mobail-menu {
+    display: none;
+}
+
+.header-area .header .mobail-menu .main-mobail-menu {
+    width: 300px;
+    background: linear-gradient(yellow 70%, blue);
+    position: fixed;
+    right: -300px;
+    top: 0;
+    padding: 39px;
+    height: 100vh;
+    transition: all ease-in-out 0.5s;
+}
+
+.header-area .header .mobail-menu .main-mobail-menu.show {
+    right: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .header-area .header .mobail-menu {
+        display: block;
+    }
+}
+
+.header-area .header .mobail-menu li {
+    margin: 12px 0;
+}
+
+.header-area .header .mobail-menu .select-lan {
+    margin-bottom: 22px;
+}
+
+.header-area .header .mobail-menu i {
+    color: hsl(var(--base));
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-area .header .mobail-menu .close-btn {
+    position: absolute;
+    top: 3%;
+    right: 19px;
 }
 
 .header-area .header .menu-settings {
@@ -3134,8 +3180,10 @@ select.form-control.form--control:has(option) ~ .form--label {
     align-items: center;
 }
 
-.header-area .header .menu-settings .main-menu {
-    padding: 23px 0;
+@media screen and (max-width: 991px) {
+    .header-area .header .menu-settings {
+        display: none;
+    }
 }
 
 .header-area .header .menu-settings .main-menu ul {
@@ -3147,6 +3195,12 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .header-area .header .menu-settings .main-menu ul li {
     margin-right: 38px;
+}
+
+@media screen and (max-width: 1199px) {
+    .header-area .header .menu-settings .main-menu ul li {
+        margin-right: 15px;
+    }
 }
 
 .header-area .header .menu-settings .main-menu ul li a {
@@ -3174,6 +3228,14 @@ select.form-control.form--control:has(option) ~ .form--label {
     border-radius: 50%;
     font-size: 14px;
     margin-right: 4px;
+}
+
+.select-lan {
+    margin-right: 16px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 /*================ Top Header Start Here ================*/
@@ -7229,6 +7291,57 @@ Counter One
 .product-detials .product.product__price-title {
     padding-bottom: 25px;
     margin-bottom: 27px;
+}
+
+/* =================== News area Here =================== */
+.news-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 62px;
+}
+
+.news-full .single-news {
+    width: 47%;
+    background: #ccc;
+    padding: 26px;
+    border-radius: 39px;
+}
+
+.news-full .single-news .tag-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.news-full .single-news .tag-date .tag {
+    background-color: hsl(var(--base-two));
+    width: 55px;
+    height: 30px;
+    border-radius: 30px;
+    line-height: 25px;
+}
+
+.news-full .single-news .tag-date h3 {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.news-full .single-news h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.news-full .single-news .profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.news-full .single-news .profile img {
+    width: 65px;
 }
 
 /*=================== Testimonials =========*/
