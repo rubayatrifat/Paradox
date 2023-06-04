@@ -6333,6 +6333,12 @@ html {
     position: relative;
 }
 
+@media screen and (max-width: 1199px) {
+    .section-title .subtitle {
+        font-size: 14px;
+    }
+}
+
 .section-title .subtitle::before {
     content: "";
     width: 15px;
@@ -6342,6 +6348,13 @@ html {
     rotate: 45deg;
     top: 2px;
     left: -28px;
+}
+
+@media screen and (max-width: 1199px) {
+    .section-title .subtitle::before {
+        width: 12px;
+        height: 12px;
+    }
 }
 
 .section-title .subtitle::after {
@@ -6356,12 +6369,26 @@ html {
     z-index: -1;
 }
 
+@media screen and (max-width: 1199px) {
+    .section-title .subtitle::after {
+        width: 12px;
+        height: 12px;
+    }
+}
+
 .section-title h1 {
     font-weight: 800;
     margin-bottom: 30px;
     font-size: 70px;
     line-height: 104px;
     color: hsl(var(--black));
+}
+
+@media screen and (max-width: 1199px) {
+    .section-title h1 {
+        font-size: 54px;
+        line-height: 72px;
+    }
 }
 
 .section-title h2 {
@@ -6371,11 +6398,23 @@ html {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+    .section-title h2 {
+        font-size: 38px;
+    }
+}
+
 .section-title p {
     line-height: 24px;
     font-size: 16px;
     width: 74%;
     margin-bottom: 47px;
+}
+
+@media screen and (max-width: 1199px) {
+    .section-title p {
+        font-size: 14px;
+    }
 }
 
 .section-title a {

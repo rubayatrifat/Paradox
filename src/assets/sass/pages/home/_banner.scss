@@ -29,6 +29,9 @@
         letter-spacing: 1px;
         margin-left: 27px;
         position: relative;
+        @include lg-screen {
+            font-size: 14px;
+        }
         &::before {
             content: "";
             width: 15px;
@@ -38,6 +41,10 @@
             rotate: 45deg;
             top: 2px;
             left: -28px;
+            @include lg-screen {
+                width: 12px;
+                height: 12px;
+            }
         }
         &::after {
             content: "";
@@ -49,6 +56,10 @@
             top: 2px;
             left: -21px;
             z-index: -1;
+            @include lg-screen {
+                width: 12px;
+                height: 12px;
+            }
         }
     }
     h1{
@@ -57,18 +68,28 @@
         font-size: 70px;
         line-height: 104px;
         color: hsl(var(--black));
+        @include lg-screen {
+            font-size: 54px;
+            line-height: 72px;
+        }
     }
     h2{
         font-size: 50px;
         font-weight: 700;
         margin-top: 12px;
         margin-bottom: 30px;
+        @include lg-screen {
+            font-size: 38px;
+        }
     }
     p {
         line-height: 24px;
         font-size: 16px;
         width: 74%;
         margin-bottom: 47px;
+        @include lg-screen {
+            font-size: 14px;
+        }
     }
     a {
         margin-right: 20px;
