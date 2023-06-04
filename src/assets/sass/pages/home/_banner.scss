@@ -32,6 +32,9 @@
         @include lg-screen {
             font-size: 14px;
         }
+        @include sm-screen {
+            font-size: 12px;
+        }
         &::before {
             content: "";
             width: 15px;
@@ -44,6 +47,10 @@
             @include lg-screen {
                 width: 12px;
                 height: 12px;
+            }
+            @include sm-screen {
+                width: 10px;
+                height: 10px;
             }
         }
         &::after {
@@ -60,6 +67,10 @@
                 width: 12px;
                 height: 12px;
             }
+            @include sm-screen {
+                height: 10px;
+                width: 10px;
+            }
         }
     }
     h1{
@@ -71,6 +82,10 @@
         @include lg-screen {
             font-size: 54px;
             line-height: 72px;
+        }
+        @include sm-screen {
+            font-size: 38px;
+            line-height: 52px;
         }
     }
     h2{
@@ -89,6 +104,10 @@
         margin-bottom: 47px;
         @include lg-screen {
             font-size: 14px;
+        }
+        @include sm-screen {
+            font-size: 12px;
+            line-height: 17px;
         }
     }
     a {

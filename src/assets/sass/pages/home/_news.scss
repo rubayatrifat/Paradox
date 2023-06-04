@@ -4,11 +4,19 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 62px;
+    @include sm-screen {
+        display: block;
+        justify-content: center;
+    }
     .single-news {
         width: 47%;
         background: #ccc;
         padding: 26px;
         border-radius: 39px;
+        @include sm-screen {
+            width: 100%;
+            margin-bottom: 30px;
+        }
         .tag-date {
             display: flex;
             justify-content: space-between;
