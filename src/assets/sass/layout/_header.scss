@@ -13,7 +13,7 @@
             display: none;
             .main-mobail-menu{
                 width: 300px;
-                background: linear-gradient(yellow 70%, blue );
+                background: linear-gradient(#ECC45D 70%, #5355DF );
                 position: fixed;
                 right: -300px;
                 top: 0;
@@ -41,7 +41,7 @@
             .close-btn {
                 position: absolute;
                 top: 3%;
-                right: 19px;
+                left: 19px;
             }
         }
         .menu-settings {
