@@ -3553,6 +3553,12 @@ li.login-registration-list__item .social-list__item .social-list__link:hover {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .footer-area .footer-top > div {
+        width: 95%;
+    }
+}
+
 .footer-area .footer-top .title {
     color: hsl(var(--white));
     margin-bottom: 22px;
@@ -6342,6 +6348,24 @@ html {
     margin-top: 195px;
 }
 
+@media screen and (max-width: 575px) {
+    .banner-area .banner-content-img {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner-area .banner-content-img p {
+        margin-left: 61px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner-area .banner-content-img .img {
+        display: none;
+    }
+}
+
 .section-title .subtitle {
     line-height: 24px;
     font-size: 16px;
@@ -6667,6 +6691,12 @@ html {
 /*====================== Servies Area ====================*/
 .servies-area {
     padding: 90px;
+}
+
+@media screen and (max-width: 575px) {
+    .servies-area {
+        padding: 50px;
+    }
 }
 
 .servies-area .slide-area {

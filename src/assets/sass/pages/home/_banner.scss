@@ -18,6 +18,19 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 195px;
+        @include msm-screen {
+            text-align: center;
+        }
+        p {
+            @include msm-screen {
+                margin-left: 61px;
+            }
+        }
+        .img {
+            @include msm-screen {
+                display: none;
+            }
+        }
     }
 }
 

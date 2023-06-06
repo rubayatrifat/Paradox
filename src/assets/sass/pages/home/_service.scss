@@ -2,6 +2,9 @@
 
 .servies-area {
 	padding: 90px;
+    @include msm-screen {
+        padding: 50px;
+    }
     .slide-area {
         margin-top: 40px;
         .single-servies {

@@ -15,6 +15,9 @@
                 width: 45%;
                 margin-bottom: 20px;
             }
+            @include msm-screen {
+                width: 95%;
+            }
         }
         .title {
             color: hsl(var(--white));
