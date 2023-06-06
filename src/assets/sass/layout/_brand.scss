@@ -1,5 +1,8 @@
 .brand-area {
 	background: hsl(var(--base)/0.1);
+	img {
+		max-width: 73%;
+	}
 	.all-item {
 		display: flex;
 		justify-content: space-around;
@@ -8,5 +11,8 @@
 		border: 2px solid hsl(var(--black)/0.1);
 		padding: 50px;
 		border-radius: 13px;
+		@include sm-screen {
+			padding: 20px;
+		}
 	}
 }

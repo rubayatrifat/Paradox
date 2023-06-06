@@ -5,11 +5,16 @@
     overflow: hidden;
     .footer-top {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: start;
         padding: 40px 0;
         & > div{
             width: 23%;
+            @include md-screen {
+                width: 45%;
+                margin-bottom: 20px;
+            }
         }
         .title {
             color: hsl(var(--white));

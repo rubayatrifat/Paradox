@@ -3536,6 +3536,7 @@ li.login-registration-list__item .social-list__item .social-list__link:hover {
 
 .footer-area .footer-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
     padding: 40px 0;
@@ -3543,6 +3544,13 @@ li.login-registration-list__item .social-list__item .social-list__link:hover {
 
 .footer-area .footer-top > div {
     width: 23%;
+}
+
+@media screen and (max-width: 991px) {
+    .footer-area .footer-top > div {
+        width: 45%;
+        margin-bottom: 20px;
+    }
 }
 
 .footer-area .footer-top .title {
@@ -3894,6 +3902,10 @@ html {
     background: hsl(var(--base)/0.1);
 }
 
+.brand-area img {
+    max-width: 73%;
+}
+
 .brand-area .all-item {
     display: flex;
     justify-content: space-around;
@@ -3902,6 +3914,12 @@ html {
     border: 2px solid hsl(var(--black)/0.1);
     padding: 50px;
     border-radius: 13px;
+}
+
+@media screen and (max-width: 767px) {
+    .brand-area .all-item {
+        padding: 20px;
+    }
 }
 
 .bg-img {
@@ -7059,6 +7077,7 @@ Counter One
 
 .get-started .started-img-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -7367,6 +7386,10 @@ Counter One
 }
 
 /* =================== News area Here =================== */
+.news-area {
+    padding-bottom: 70px;
+}
+
 .news-full {
     display: flex;
     justify-content: space-between;
