@@ -152,7 +152,7 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 991,
             settings: {
               arrows: false,
-              slidesToShow: 1
+              slidesToShow: 2
             }
           },
           {

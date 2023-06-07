@@ -3170,8 +3170,8 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .header-area .header .mobail-menu .close-btn {
     position: absolute;
-    top: 3%;
-    left: 19px;
+    top: 2%;
+    left: 17px;
 }
 
 .header-area .header .menu-settings {
@@ -6345,7 +6345,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 195px;
+    margin-top: 155px;
 }
 
 @media screen and (max-width: 575px) {
@@ -6447,8 +6447,10 @@ html {
 
 @media screen and (max-width: 1199px) {
     .section-title h1 {
-        font-size: 54px;
-        line-height: 72px;
+        font-size: 42px;
+        line-height: 54px;
+        margin-top: 12px;
+        margin-bottom: 23px;
     }
 }
 
@@ -6482,6 +6484,7 @@ html {
 @media screen and (max-width: 1199px) {
     .section-title p {
         font-size: 14px;
+        margin-bottom: 33px;
     }
 }
 
@@ -6690,7 +6693,7 @@ html {
 
 /*====================== Servies Area ====================*/
 .servies-area {
-    padding: 90px;
+    padding: 90px 0;
 }
 
 @media screen and (max-width: 575px) {
