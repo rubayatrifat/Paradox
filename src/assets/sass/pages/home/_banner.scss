@@ -18,12 +18,16 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 155px;
+        @include sm-screen {
+            margin-top: 130px;
+        }
         @include msm-screen {
             text-align: center;
         }
         p {
             @include msm-screen {
-                margin-left: 61px;
+                margin: auto;
+                margin-bottom: 20px;
             }
         }
         .img {
@@ -47,6 +51,9 @@
         @include sm-screen {
             font-size: 12px;
         }
+        @include msm-screen {
+            font-size: 11px;
+        }
         &::before {
             content: "";
             width: 15px;
@@ -63,6 +70,11 @@
             @include sm-screen {
                 width: 10px;
                 height: 10px;
+            }
+            @include msm-screen {
+                width: 8px;
+                height: 8px;
+                left: -21px;
             }
         }
         &::after {
@@ -83,6 +95,11 @@
                 height: 10px;
                 width: 10px;
             }
+            @include msm-screen {
+                height: 8px;
+                width: 8px;
+                left: -16px;
+            }
         }
     }
     h1{
@@ -101,6 +118,11 @@
             font-size: 38px;
             line-height: 52px;
         }
+        @include msm-screen {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
     }
     h2{
         font-size: 50px;
@@ -109,6 +131,12 @@
         margin-bottom: 30px;
         @include lg-screen {
             font-size: 38px;
+        }
+        @include md-screen {
+            font-size: 32px;
+        }
+        @include msm-screen {
+            font-size: 26px;
         }
     }
     p {
@@ -123,6 +151,9 @@
         @include sm-screen {
             font-size: 12px;
             line-height: 17px;
+        }
+        @include msm-screen {
+            font-size: 11px;
         }
     }
     a {

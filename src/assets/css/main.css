@@ -3549,7 +3549,7 @@ li.login-registration-list__item .social-list__item .social-list__link:hover {
 @media screen and (max-width: 991px) {
     .footer-area .footer-top > div {
         width: 45%;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 }
 
@@ -6348,6 +6348,12 @@ html {
     margin-top: 155px;
 }
 
+@media screen and (max-width: 767px) {
+    .banner-area .banner-content-img {
+        margin-top: 130px;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .banner-area .banner-content-img {
         text-align: center;
@@ -6356,7 +6362,8 @@ html {
 
 @media screen and (max-width: 575px) {
     .banner-area .banner-content-img p {
-        margin-left: 61px;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -6386,6 +6393,12 @@ html {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .section-title .subtitle {
+        font-size: 11px;
+    }
+}
+
 .section-title .subtitle::before {
     content: "";
     width: 15px;
@@ -6408,6 +6421,14 @@ html {
     .section-title .subtitle::before {
         width: 10px;
         height: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-title .subtitle::before {
+        width: 8px;
+        height: 8px;
+        left: -21px;
     }
 }
 
@@ -6437,6 +6458,14 @@ html {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .section-title .subtitle::after {
+        height: 8px;
+        width: 8px;
+        left: -16px;
+    }
+}
+
 .section-title h1 {
     font-weight: 800;
     margin-bottom: 30px;
@@ -6461,6 +6490,13 @@ html {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .section-title h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
 .section-title h2 {
     font-size: 50px;
     font-weight: 700;
@@ -6471,6 +6507,18 @@ html {
 @media screen and (max-width: 1199px) {
     .section-title h2 {
         font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .section-title h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-title h2 {
+        font-size: 26px;
     }
 }
 
@@ -6492,6 +6540,12 @@ html {
     .section-title p {
         font-size: 12px;
         line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-title p {
+        font-size: 11px;
     }
 }
 
@@ -6698,7 +6752,7 @@ html {
 
 @media screen and (max-width: 575px) {
     .servies-area {
-        padding: 50px;
+        padding: 50px 0;
     }
 }
 
