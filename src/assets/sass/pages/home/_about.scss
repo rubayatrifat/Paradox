@@ -103,6 +103,9 @@
                 padding-bottom: 0;
                 border-bottom: 0;
             }
+            @include msm-screen {
+                width: 100%;
+            }
             i {
                 color: hsl(var(--base-two));
                 width: 20px;

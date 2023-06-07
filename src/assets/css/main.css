@@ -6497,6 +6497,13 @@ html {
     }
 }
 
+@media screen and (max-width: 374px) {
+    .section-title h1 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
 .section-title h2 {
     font-size: 50px;
     font-weight: 700;
@@ -6519,6 +6526,13 @@ html {
 @media screen and (max-width: 575px) {
     .section-title h2 {
         font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .section-title h2 {
+        font-size: 22px;
+        margin-bottom: 17px;
     }
 }
 
@@ -6546,6 +6560,12 @@ html {
 @media screen and (max-width: 575px) {
     .section-title p {
         font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .section-title p {
+        font-size: 10px;
     }
 }
 
@@ -6679,6 +6699,12 @@ html {
 .about-right-content .about-service li:last-child {
     padding-bottom: 0;
     border-bottom: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .about-right-content .about-service li {
+        width: 100%;
+    }
 }
 
 .about-right-content .about-service li i {

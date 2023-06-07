@@ -122,7 +122,10 @@
             font-size: 32px;
             line-height: 40px;
         }
-
+        @include xxsm-screen {
+            font-size: 26px;
+            line-height: 36px;
+        }
     }
     h2{
         font-size: 50px;
@@ -137,6 +140,10 @@
         }
         @include msm-screen {
             font-size: 26px;
+        }
+        @include xxsm-screen {
+            font-size: 22px;
+            margin-bottom: 17px;
         }
     }
     p {
@@ -154,6 +161,9 @@
         }
         @include msm-screen {
             font-size: 11px;
+        }
+        @include xxsm-screen {
+            font-size: 10px;
         }
     }
     a {
